@@ -1,0 +1,14 @@
+numpy==1.23.0
+pandas==1.4.1
+matplotlib==3.5.1
+seaborn==0.11.2
+scipy==1.7.3
+scikit-learn==1.0.2
+requests==2.27.1
+beautifulsoup4==4.10.0
+lxml==4.7.1
+selenium==4.1.0
+cucumber==7.2.2
+jira==3.1.1
+simulink==2.4.0  # No new updates found, make sure this version is still compatible
+teamcenter==0.0.6  # No new updates found, make sure this version is still compatible
