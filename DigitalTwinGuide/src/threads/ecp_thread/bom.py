@@ -1,71 +1,71 @@
 import pandas as pd
 
-class BOMManager:
-    """
-    BOMManager class for handling Bill of Materials management.
+class BOMChatInterface:
+    def __init__(self, bom_manager):
+        self.bom_manager = bom_manager
 
-    This class provides methods to manage and process Bill of Materials (BOM) data,
-    including adding, updating, and removing items in the BOM.
+    def process_command(self, command):
+        # Tokenize the command into words
+        words = command.lower().split()
 
-    Attributes:
-        bom_data (pd.DataFrame): The BOM data as a pandas DataFrame.
-    """
+        # Process "add item" command
+        if words[0] == "add" and words[1] == "item":
+            item_data = {
+                'item_id': words[2],
+                'quantity': int(words[3]),
+                'description': ' '.join(words[4:])
+            }
+            self.bom_manager.add_item(item_data)
+            return f"Item {item_data['item_id']} added to the BOM."
 
-    def __init__(self, bom_data):
-        """
-        Initialize BOMManager with a given BOM data.
+        # Process "update item" command
+        elif words[0] == "update" and words[1] == "item":
+            item_id = words[2]
+            updated_data = {
+                'quantity': int(words[3]),
+                'description': ' '.join(words[4:])
+            }
+            self.bom_manager.update_item(item_id, updated_data)
+            return f"Item {item_id} updated in the BOM."
 
-        Args:
-            bom_data (pd.DataFrame): The BOM data as a pandas DataFrame.
-        """
-        self.bom_data = bom_data
+        # Process "remove item" command
+        elif words[0] == "remove" and words[1] == "item":
+            item_id = words[2]
+            self.bom_manager.remove_item(item_id)
+            return f"Item {item_id} removed from the BOM."
 
-    def add_item(self, item_data):
-        """
-        Add an item to the BOM.
+        # Process "get item" command
+        elif words[0] == "get" and words[1] == "item":
+            item_id = words[2]
+            item_data = self.bom_manager.get_item(item_id)
+            return f"Item data: {item_data}"
 
-        Args:
-            item_data (dict): A dictionary containing item data.
-        """
-        self.bom_data = self.bom_data.append(item_data, ignore_index=True)
+        # Process "get bom data" command
+        elif words[0] == "get" and words[1] == "bom" and words[2] == "data":
+            bom_data = self.bom_manager.get_bom_data()
+            return f"BOM data:\n{bom_data}"
 
-    def update_item(self, item_id, updated_data):
-        """
-        Update an item in the BOM.
+        # Process "validate bom" command
+        elif words[0] == "validate" and words[1] == "bom":
+            validation_results = self.bom_manager.validate_bom()
+            return f"Validation results:\n{validation_results}"
 
-        Args:
-            item_id (int): The ID of the item to be updated.
-            updated_data (dict): A dictionary containing updated item data.
-        """
-        self.bom_data.loc[self.bom_data['item_id'] == item_id, updated_data.keys()] = updated_data.values()
+        # Handle unknown command
+        else:
+            return "Unknown command. Please try again."
 
-    def remove_item(self, item_id):
-        """
-        Remove an item from the BOM.
+# Example usage
+bom_data = pd.DataFrame({
+    'item_id': ['A1', 'A2'],
+    'quantity': [5, 3],
+    'description': ['Bolt', 'Nut']
+})
+bom_manager = BOMManager(bom_data)
+bom_chat_interface = BOMChatInterface(bom_manager)
 
-        Args:
-            item_id (int): The ID of the item to be removed.
-        """
-        self.bom_data = self.bom_data[self.bom_data['item_id'] != item_id]
-
-    def get_item(self, item_id):
-        """
-        Get an item from the BOM.
-
-        Args:
-            item_id (int): The ID of the item to be fetched.
-
-        Returns:
-            dict: A dictionary containing item data.
-        """
-        item_data = self.bom_data.loc[self.bom_data['item_id'] == item_id].to_dict(orient='records')[0]
-        return item_data
-
-    def get_bom_data(self):
-        """
-        Get the entire BOM data.
-
-        Returns:
-            pd.DataFrame: The BOM data as a pandas DataFrame.
-        """
-        return self.bom_data
+# Simulate user commands
+print(bom_chat_interface.process_command("add item A3 10 Screw"))
+print(bom_chat_interface.process_command("update item A2 8 Washer"))
+print(bom_chat_interface.process_command("get item A1"))
+print(bom_chat_interface.process_command("get bom data"))
+print(bom_chat_interface.process_command("validate bom"))
