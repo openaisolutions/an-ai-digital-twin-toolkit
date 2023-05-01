@@ -1,6 +1,7 @@
 import os
 import yaml
 
+
 def create_file_structure(file_structure, root_dir):
     """
     Creates the file and folder structure based on the YAML file.
@@ -19,6 +20,7 @@ def create_file_structure(file_structure, root_dir):
                         open(file_path, 'w').close()
                     else:
                         create_file_structure([file], folder_path)
+
 
 if __name__ == '__main__':
     with open('digital_twin_guide.yaml') as f:
