@@ -1,8 +1,32 @@
-DigitalTwinGuide:
-    Book:
-        Digital_Twin_Guide.ipynb: Digital_Twin_Guide.ipynb
-        TOC.ipynb: TOC.ipynb
-        create_twin.py: create_twin.py
+.ipynb_checkpoints:
+    combined-checkpoint.ipynb: combined-checkpoint.ipynb
+.vscode:
+    settings.json: settings.json
+Digital_Twin_Guide.yaml: Digital_Twin_Guide.yaml
+README.md: README.md
+_config.yaml: _config.yaml
+_toc.yaml: _toc.yaml
+_toc.yml: _toc.yml
+combined.asciidoc: combined.asciidoc
+combined.ipynb: combined.ipynb
+create_folder.py: create_folder.py
+create_twin.py: create_twin.py
+generate_toc.py: generate_toc.py
+notebook.ipynb: notebook.ipynb
+notebook.pdf: notebook.pdf
+repository_structure copy.yaml: repository_structure copy.yaml
+repository_structure.yaml: repository_structure.yaml
+requirements.txt: requirements.txt
+section1:
+    .ipynb_checkpoints:
+        Introduction_to_AI-Powered_Digital_Twins-checkpoint.md: Introduction_to_AI-Powered_Digital_Twins-checkpoint.md
+    About.ipynb: About.ipynb
+    Digital_Twin_Guide.ipynb: Digital_Twin_Guide.ipynb
+    Introduction.ipynb: Introduction.ipynb
+    Introduction_to_AI-Powered_Digital_Twins.md: Introduction_to_AI-Powered_Digital_Twins.md
+    TOC.ipynb: TOC.ipynb
+    requirements.ipynb: requirements.ipynb
+section3:
     LICENSE.txt: LICENSE.txt
     README.md: README.md
     data:
@@ -27,13 +51,13 @@ DigitalTwinGuide:
         example_software_integration_thread.py: example_software_integration_thread.py
         example_technical_data_packaging_thread.py: example_technical_data_packaging_thread.py
         example_training_thread.py: example_training_thread.py
-    requirements.txt: requirements.txt
     setup.py: setup.py
     src:
         __init__.py: __init__.py
         main.py: main.py
         patterns:
             command.py: command.py
+            configuration.ipynb: configuration.ipynb
             configuration.py: configuration.py
             framework_controller.py: framework_controller.py
             framework_facade.py: framework_facade.py
@@ -134,8 +158,8 @@ DigitalTwinGuide:
         test_technical_data_packaging_thread.py: test_technical_data_packaging_thread.py
         test_test_thread.py: test_test_thread.py
         test_training_thread.py: test_training_thread.py
-Digital_Twin_Guide.yaml: Digital_Twin_Guide.yaml
-README.md: README.md
-combined.ipynb: combined.ipynb
-notebook.ipynb: notebook.ipynb
-repository_structure.yaml: repository_structure.yaml
+section4:
+    Acknowledgements.ipynb: Acknowledgements.ipynb
+    Bibliography.ipynb: Bibliography.ipynb
+workspace:
+    workspace.json: workspace.json

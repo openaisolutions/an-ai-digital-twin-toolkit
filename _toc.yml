@@ -1,0 +1,38 @@
+- file: README.md
+  title: README
+    - file: combined.ipynb
+      title: Combined
+    - file: notebook.ipynb
+      title: Notebook
+    - file: README.md
+      title: Readme
+    - file: .ipynb_checkpoints\combined-checkpoint.ipynb
+      title: Combined-Checkpoint
+    - file: Book\About.ipynb
+      title: About
+    - file: Book\Acknowledgements.ipynb
+      title: Acknowledgements
+    - file: Book\Bibliography.ipynb
+      title: Bibliography
+    - file: Book\Digital_Twin_Guide.ipynb
+      title: Digital Twin Guide
+    - file: Book\Introduction.ipynb
+      title: Introduction
+    - file: Book\Introduction_to_AI-Powered_Digital_Twins.md
+      title: Introduction To Ai-Powered Digital Twins
+    - file: Book\requirements.ipynb
+      title: Requirements
+    - file: Book\TOC.ipynb
+      title: Toc
+    - file: Book\.ipynb_checkpoints\Introduction_to_AI-Powered_Digital_Twins-checkpoint.md
+      title: Introduction To Ai-Powered Digital Twins-Checkpoint
+    - file: DigitalTwinGuide\README.md
+      title: Readme
+    - file: DigitalTwinGuide\docs\api_reference.md
+      title: Api Reference
+    - file: DigitalTwinGuide\docs\developer_guide.md
+      title: Developer Guide
+    - file: DigitalTwinGuide\docs\user_manual.md
+      title: User Manual
+    - file: DigitalTwinGuide\src\patterns\configuration.ipynb
+      title: Configuration
