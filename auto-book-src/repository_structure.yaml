@@ -1,0 +1,210 @@
+auto-book:
+    .ipynb_checkpoints:
+        combined-checkpoint.ipynb: combined-checkpoint.ipynb
+    .vscode:
+        settings.json: settings.json
+    README.md: README.md
+    auto-book-src:
+        Digital_Twin_Guide.yaml: Digital_Twin_Guide.yaml
+        _config.yaml: _config.yaml
+        _toc.yaml: _toc.yaml
+        _toc.yml: _toc.yml
+        combined.asciidoc: combined.asciidoc
+        combined.ipynb: combined.ipynb
+        create_chapters.py: create_chapters.py
+        create_folder.py: create_folder.py
+        create_twin.py: create_twin.py
+        generate_toc.py: generate_toc.py
+        notebook.ipynb: notebook.ipynb
+        notebook.pdf: notebook.pdf
+        repository_structure.yaml: repository_structure.yaml
+    data:
+        bom_data.csv: bom_data.csv
+        config.json: config.json
+        input.csv: input.csv
+        output.csv: output.csv
+    docs:
+        api_reference.md: api_reference.md
+        developer_guide.md: developer_guide.md
+        user_manual.md: user_manual.md
+    requirements.txt: requirements.txt
+    section_1:
+        .ipynb_checkpoints:
+            Introduction_to_AI-Powered_Digital_Twins-checkpoint.md: Introduction_to_AI-Powered_Digital_Twins-checkpoint.md
+        About.ipynb: About.ipynb
+        Digital_Twin_Guide.ipynb: Digital_Twin_Guide.ipynb
+        Introduction.ipynb: Introduction.ipynb
+        Introduction_to_AI-Powered_Digital_Twins.md: Introduction_to_AI-Powered_Digital_Twins.md
+        TOC.ipynb: TOC.ipynb
+        requirements.ipynb: requirements.ipynb
+    section_3:
+        LICENSE.txt: LICENSE.txt
+        README.md: README.md
+        Verificatin_thread:
+            test:
+                test_verification_thread.py: test_verification_thread.py
+        design_thread:
+            examples:
+                example_design_thread.py: example_design_thread.py
+            src:
+                design_thread:
+                    __init__.py: __init__.py
+                    cam.py: cam.py
+                    nx.py: nx.py
+                    plm.py: plm.py
+            test:
+                test_design_thread.py: test_design_thread.py
+        ecp_thread:
+            __init__.py: __init__.py
+            bom.py: bom.py
+            ecp.py: ecp.py
+            examples:
+                example_ecp_thread.py: example_ecp_thread.py
+            jira.py: jira.py
+            sap.py: sap.py
+            teamcenter.py: teamcenter.py
+            tests:
+                test_ecp_thread.py: test_ecp_thread.py
+        field_maintenance_support_thread:
+            examples:
+                example_field_maintenance_support_thread.py: example_field_maintenance_support_thread.py
+            src:
+                field_maintenance_support_thread:
+                    __init__.py: __init__.py
+                    jira.py: jira.py
+                    maintenance.py: maintenance.py
+                    support.py: support.py
+                    teamcenter.py: teamcenter.py
+            test:
+                test_field_maintenance_support_thread.py: test_field_maintenance_support_thread.py
+        logistics_thread:
+            examples:
+                example_logistics_thread.py: example_logistics_thread.py
+            src:
+                logistics_thread:
+                    __init__.py: __init__.py
+                    delivery.py: delivery.py
+                    jira.py: jira.py
+                    sap.py: sap.py
+                    shipment.py: shipment.py
+                    teamcenter.py: teamcenter.py
+            test:
+                test_logistics_thread.py: test_logistics_thread.py
+        manufacturing_thread:
+            examples:
+                example_manufacturing_thread.py: example_manufacturing_thread.py
+            src:
+                manufacturing_thread:
+                    __init__.py: __init__.py
+                    cam.py: cam.py
+                    gcode.py: gcode.py
+                    manufacturing.py: manufacturing.py
+                    teamcenter.py: teamcenter.py
+            test:
+                test_manufacturing_thread.py: test_manufacturing_thread.py
+        materials_management_thread:
+            examples:
+                example_materials_management_thread.py: example_materials_management_thread.py
+            src:
+                materials_management_thread:
+                    __init__.py: __init__.py
+                    bom.py: bom.py
+                    inventory.py: inventory.py
+                    jira.py: jira.py
+                    sap.py: sap.py
+                    teamcenter.py: teamcenter.py
+            test:
+                test_materials_management_thread.py: test_materials_management_thread.py
+        patterns_thread:
+            __init__.py: __init__.py
+            command.py: command.py
+            configuration.ipynb: configuration.ipynb
+            configuration.py: configuration.py
+            framework_controller.py: framework_controller.py
+            framework_facade.py: framework_facade.py
+            logger.py: logger.py
+            main.py: main.py
+            singleton.py: singleton.py
+            thread_factory.py: thread_factory.py
+        production_thread:
+            examples:
+                example_production_thread.py: example_production_thread.py
+            src:
+                production_thread:
+                    __init__.py: __init__.py
+                    cam.py: cam.py
+                    gcode.py: gcode.py
+                    production.py: production.py
+                    teamcenter.py: teamcenter.py
+            test:
+                test_production_thread.py: test_production_thread.py
+        quality_thread:
+            __init__.py: __init__.py
+            cucumber.py: cucumber.py
+            examples:
+                example_quality_thread.py: example_quality_thread.py
+            java.py: java.py
+            jira.py: jira.py
+            python.py: python.py
+            selenium.py: selenium.py
+            test.py: test.py
+            test_requirements_thread.py: test_requirements_thread.py
+        requirements_thread:
+            examples:
+                example_requirements_thread.py: example_requirements_thread.py
+            src:
+                requirements_thread:
+                    src:
+                        requirements_thread:
+                            __init__.py: __init__.py
+                            cameo.py: cameo.py
+                            doors.py: doors.py
+                            sysml.py: sysml.py
+        setup.py: setup.py
+        software_integration_thread:
+            examples:
+                example_software_integration_thread.py: example_software_integration_thread.py
+            src:
+                software_integration_thread:
+                    __init__.py: __init__.py
+                    c.py: c.py
+                    code.py: code.py
+                    jira.py: jira.py
+                    matlab.py: matlab.py
+                    python.py: python.py
+                    simulink.py: simulink.py
+                    teamcenter.py: teamcenter.py
+                    test.py: test.py
+            test:
+                test_software_integration_thread.py: test_software_integration_thread.py
+        technical_data_packaging_thread:
+            examples:
+                example_technical_data_packaging_thread.py: example_technical_data_packaging_thread.py
+            src:
+                technical_data_packaging_thread:
+                    __init__.py: __init__.py
+                    packaging.py: packaging.py
+                    requirements.py: requirements.py
+                    tdp.py: tdp.py
+                    teamcenter.py: teamcenter.py
+                    technical_data.py: technical_data.py
+            test:
+                test_technical_data_packaging_thread.py: test_technical_data_packaging_thread.py
+        training_thread:
+            examples:
+                example_training_thread.py: example_training_thread.py
+            src:
+                training_thread:
+                    __init__.py: __init__.py
+                    jira.py: jira.py
+                    powerpoint.py: powerpoint.py
+                    training.py: training.py
+            test:
+                test_training_thread.py: test_training_thread.py
+    section_4:
+        Acknowledgements.ipynb: Acknowledgements.ipynb
+        Bibliography.ipynb: Bibliography.ipynb
+    workspace:
+        workspace.json: workspace.json
+combined.html: combined.html
+notebook.html: notebook.html

@@ -1,0 +1,48 @@
+- file: README
+  title: Introduction
+- part: Section 1
+  chapters:
+    - file: Introduction_to_AI-Powered_Digital_Twins
+      title: Introduction to AI-Powered Digital Twins
+    - file: Digital_Twin_Guide
+      title: Digital Threads and Digital Twins in Hardware Development
+- part: Section 2
+  chapters:
+    - file: Digital_Threads_and_Digital_Twins_in_Hardware_Development
+      title: Digital Threads and Digital Twins in Hardware Development
+    - file: The_Digital_Thread
+      title: The Digital Thread
+    - file: Overview_of_Digital_Twins
+      title: Overview of Digital Twins
+- part: Section 3
+  chapters:
+    - file: requirements_thread
+      title: Requirements Thread
+    - file: design_thread
+      title: Design Thread
+    - file: materials_management_thread
+      title: Materials Management Thread
+    - file: tests/Verificatin_thread
+      title: Verificaiton Thread
+    - file: software_integration_thread
+      title: Software Integration Thread
+    - file: logistics_thread
+      title: Logistics Thread
+    - file: training_thread
+      title: Training Thread
+    - file: technical_data_packaging_thread
+      title: Technical Data Packaging Thread
+    - file: production_thread
+      title: Production Thread
+    - file: manufacturing_thread
+      title: Manufacturing Thread
+    - file: field_maintenance_support_thread
+      title: Field Maintenance Support Thread
+- part: Section 4
+  chapters:
+    - file: Bibliography
+    - file: Acknowledgements
+    - file: About
+    - file: docs/user_manual
+    - file: docs/developer_guide
+    - file: docs/api_reference
