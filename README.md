@@ -1,10 +1,13 @@
 # AI Digital Twin Toolkit
 
 Welcome to the AI Digital Twin Toolkit repository, an advanced Python framework designed to facilitate the development and implementation of digital twin technologies with a focus on artificial intelligence integration. This toolkit serves as a practical extension to the "Digital Twin Guide," offering readers and developers alike a hands-on approach to creating digital twins that leverage AI for enhanced simulation, prediction, and operation across various domains.
+This fourth edition focuses on factory-of-the-future integration. New directories (/edge, /cloud, /mlops) organize the toolkit around Jetson-powered robots, cloud twins, and MLOps pipelines. See `docs/book` for draft chapters.
+
 
 ## Table of Contents
 
 - Getting Started
+
 - Prerequisites
 - Installation
 - Usage

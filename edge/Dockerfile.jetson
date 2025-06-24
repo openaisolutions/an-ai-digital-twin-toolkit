@@ -1,0 +1,8 @@
+FROM nvcr.io/nvidia/l4t-base:r32.7.1
+
+# Install ROS 2 and dependencies (placeholder)
+RUN apt-get update && \
+    apt-get install -y ros-foxy-desktop && \
+    rm -rf /var/lib/apt/lists/*
+
+CMD ["/bin/bash"]

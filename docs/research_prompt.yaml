@@ -1,0 +1,43 @@
+# Research instructions for Codex or other agents
+goal: "Collect implementation assets for Digital-Twin Toolkit v4"
+deliverables:
+  - comparative_matrix.csv
+  - sample_code/*.py
+  - architecture_diagram.drawio
+  - literature_summary.md
+
+tasks:
+  - id: survey_platforms
+    description: |
+      Scrape official docs & blogs for
+      {Azure Digital Twins, AWS TwinMaker, Nvidia NIM, Isaac SIM, KubeEdge, ROS 2-OPC UA bridges}
+    output: comparative_matrix.csv
+
+  - id: edge_robot_prototype
+    description: |
+      Generate Jetson-Nano Dockerfile + ROS 2 navigation stack example.
+    depends_on: survey_platforms
+    output: sample_code/jetson_nav.dockerfile
+
+  - id: twin_schema
+    description: |
+      Convert ISA-95 equipment hierarchy Excel to Azure Digital Twins DTDL.
+    refs:
+      - https://learn.microsoft.com/azure/digital-twins/how-to-ingest-opcua-data
+    output: sample_code/isa95_to_dtdl.py
+
+  - id: nim_serving
+    description: |
+      Produce Helm chart that deploys a NIM LLM micro-service and registers endpoint in Kubeflow.
+    output: sample_code/nim_chart/
+
+  - id: write_summary
+    description: |
+      Auto-summarize each source (250 w max) with citation links.
+    depends_on: [survey_platforms, twin_schema]
+    output: literature_summary.md
+
+agent_instructions:
+  - prefer_official_docs: true
+  - cite_everything: true
+  - use_python_linting: true
