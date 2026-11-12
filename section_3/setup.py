@@ -25,7 +25,7 @@ setup(
         "matplotlib==3.3.4",
         "seaborn==0.11.1",
         "scipy==1.6.1",
-        "scikit-learn==0.24.1",
+        "scikit-learn==1.7.2",
         "requests==2.25.1",
         "beautifulsoup4==4.9.3",
         "lxml==4.6.2",
