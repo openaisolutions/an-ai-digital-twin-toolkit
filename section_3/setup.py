@@ -23,7 +23,7 @@ setup(
         "numpy==1.20.1",
         "pandas==1.2.2",
         "matplotlib==3.3.4",
-        "seaborn==0.11.1",
+        "seaborn==0.13.2",
         "scipy==1.6.1",
         "scikit-learn==0.24.1",
         "requests==2.25.1",
