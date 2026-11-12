@@ -27,7 +27,7 @@ setup(
         "scipy==1.6.1",
         "scikit-learn==0.24.1",
         "requests==2.25.1",
-        "beautifulsoup4==4.9.3",
+        "beautifulsoup4==4.15.0",
         "lxml==4.6.2",
         "selenium==3.141.0",
         "cucumber==6.10.4",
