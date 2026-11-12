@@ -20,7 +20,7 @@ setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        "numpy==1.20.1",
+        "numpy==2.2.6",
         "pandas==1.2.2",
         "matplotlib==3.3.4",
         "seaborn==0.11.1",
